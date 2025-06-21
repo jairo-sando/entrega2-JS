@@ -104,10 +104,13 @@ const servicios = [
 
 ] ;
 
+//Funciones y constantes
+
 const contenedorServicios = document.querySelector("#contenedor-servicios"); 
 const botonesCategorias = document.querySelectorAll(".boton-categoria"); 
 const tituloPrincipal = document.querySelector ("#titulo-Principal");
 let botonesAgregar = document.querySelectorAll(".servicio-agregar");
+const numerito = document.querySelector("#numerito");
 
 
 
@@ -182,6 +185,12 @@ function agregarAlCarrito(e){
      servicioAgregado.cantidad = 1;
      serviciosEnCarrito.push(servicioAgregado);
   } 
+    
+   actualizarNumerito(); 
+}
 
-       
+function actualizarNumerito() {
+   let nuevoNumerito = serviciosEnCarrito.reduce((acc, servicio) => acc + servicio.cantidad, 0 ); 
+   numerito.innerText = nuevoNumerito; 
+
 }
