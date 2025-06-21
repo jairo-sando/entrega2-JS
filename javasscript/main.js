@@ -187,6 +187,10 @@ function agregarAlCarrito(e){
   } 
     
    actualizarNumerito(); 
+
+   localStorage.setItem("servicios-en-carrito", JSON.stringify(serviciosEnCarrito)); 
+
+
 }
 
 function actualizarNumerito() {
