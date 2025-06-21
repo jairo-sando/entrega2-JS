@@ -59,7 +59,7 @@ aside{
 
  background-color: transparent;
  border:0;
- color: rgb(32, 155, 157)   ; 
+ color: rgb(32, 155, 157); 
  font-size: 1rem;
  cursor:pointer;
  display: flex;
@@ -67,14 +67,12 @@ aside{
  font-weight: 600;
  padding: 1rem;
  font-size: .85rem;
- 
-
-}
+ }
 
 .boton-menu.active{
   background-color:rgb(232, 233, 235);
   color: rgb(32, 155, 157);
-  width: 100%;
+   width: 100%;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   
@@ -91,6 +89,14 @@ aside{
   margin-top: 1.5rem;
 
 
+}
+
+.numero{
+  background-color: rgb(232, 233, 235);
+  padding: 0.25rem;
+  border-radius: 1rem;
+
+    
 }
 
 .texto.footer{
@@ -151,7 +157,7 @@ main {
   text-transform: uppercase;
   border-radius: 1rem;
   cursor: pointer;
-  border: 1px solid rgb(12, 87, 88)
+  border: 1px solid rgb(12, 87, 88);
 
 }
 
@@ -162,8 +168,19 @@ main {
 
 /** Carrito **/
 
-.carrito-vacio{
- display: none;
+.contenedor-carrito{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+
+
+
+}
+
+.carrito-vacio,
+.carrito-comprado{
+ 
  color:  rgb(32, 155, 157);
  
 }
@@ -207,3 +224,53 @@ main {
   cursor: pointer;
 }
 
+.carrito-acciones{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.carrito-producto-eliminar{
+ border:0;
+ padding:1rem ;
+ border-radius: 1rem;
+ background-color:rgb(180, 182, 187) ;
+ color:rgb(32, 155, 157) ;
+ text-transform: uppercase;
+ cursor: pointer;
+
+}
+
+.carrito-comprar{
+ border:0;
+ padding:1rem ;
+ 
+ background-color:rgb(180, 182, 187) ;
+ color:rgb(32, 155, 157) ;
+ text-transform: uppercase;
+ cursor: pointer;
+ border-top-right-radius: 1rem;
+ border-bottom-right-radius: 1rem;
+
+}
+
+.carrito-derecha{
+ display: flex;
+}
+
+.class-total{
+ display:flex;
+ padding:1rem ;
+ background-color:rgb(194, 197, 206) ;
+ color:rgb(32, 155, 157) ;
+ text-transform: uppercase;
+ border-top-left-radius: 1rem;
+ border-bottom-left-radius: 1rem;
+ gap: 1rem;
+
+}
+
+.disabled{
+  display: none;
+
+}
