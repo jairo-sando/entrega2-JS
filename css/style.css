@@ -141,7 +141,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: .25rem;
-
+  
 }
 
 .servicio-titulo{
@@ -149,7 +149,7 @@ main {
 
 }
 
-.producto-agregar{
+.servicio-agregar{
   border: 0;
   background-color: rgb(32, 155, 157)  ;
   color: azure;
@@ -161,7 +161,7 @@ main {
 
 }
 
-.producto-agregar:hover {
+.servicio-agregar:hover {
   background-color:rgb(12, 87, 88) ;
 
 }
